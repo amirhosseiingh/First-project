@@ -62,5 +62,5 @@ function loggedInHandler() {
     firstNameElement.innerHTML = name;
     finalModal.style.display = "flex";
 }
-
+alert("hello")
  
