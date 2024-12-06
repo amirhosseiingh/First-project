@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-full h-screen bg-gray-300 flex justify-center text-center p-12 relative">
+        <div class="w-96 h-auto bg-white shadow-md p-8 rounded text-left flex flex-col gap-4">
+            <div>
+                <h1 class="text-2xl">Log in</h1>
+                <p>to start learning</p>
+            </div>
+            <div class="flex flex-col gap-4 ">
+                <div class="flex flex-col">
+                    <label for="">twitter handle</label>
+                    <input id="userName-input" class="border-black border-2" type="text">
+                </div>
+                <div class="flex flex-col">
+                    <label for="">password</label>
+                    <input id="password-input" class="border-black border-2" type="password">
+                    <span id="password-error" class="hidden text-red-500 text-xs">password should be 8 characters</span>
+                </div>
+            </div>
+            <button id="submit" onclick="submitButton()" class="bg-blue-300 mt-8 p-4" type="submit">Log in➡️ </button>
+        </div>
+        <div id="modal-box"
+            class="w-full h-screen bg-gray-700 fixed top-0 hidden bg-opacity-70 z-10 flex justify-center items-center">
+            <p class="text-white text-5xl">is loading...</p>
+        </div>
+        <div id="final-modal"
+            class="w-full h-screen bg-green-700 fixed top-0 hidden bg-opacity-70 z-10 flex justify-center items-center">
+            <p class="text-white text-5xl ">Welcome <span id="firstName-element"></span> ! You’ve successfully logged
+                in. </p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
